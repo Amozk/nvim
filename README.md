@@ -45,6 +45,7 @@ This setup relies on the official **NvChad & NvZone ecosystem**, customized with
 - **Color Tools ([`nvzone/minty`](https://github.com/nvzone/minty)):** Interactive color picker and shade generator UI.
 - **Autocompletions ([`nvim-cmp`](https://github.com/hrsh7th/nvim-cmp)):** Extended with Windows-friendly completion keybinds (`<C-o>`, `<C-Space>`).
 - **Syntax & Folding ([`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter)):** Web parsers installed with Treesitter-based expression folding (`foldlevel = 99`).
+- **Markdown Preview ([`render-markdown`](https://github.com/MeanderingProgrammer/render-markdown.nvim)):** Still uses the default configuration.
 
 ## Core NvChad Suite
 - **File Explorer:** `nvim-tree.lua`
@@ -62,6 +63,7 @@ Managed via Mason and configured in `lua/configs/lspconfig.lua`:
 - `eslint` (Linting diagnostics)
 - `html` & `cssls`
 - `lua_ls` (Neovim runtime & NvChad types)
+- `tailwindcss`
 
 ---
 
@@ -77,6 +79,7 @@ Managed via Mason and configured in `lua/configs/lspconfig.lua`:
 
 - `:NvCheatsheet` (or `<leader>ch`) Opens the interactive on-screen cheatsheet for all NvChad keybinds.
 - `g?` Inside the `NvimTree` window, shows all file explorer shortcuts.
+- `<Leader-wK>` Activate which-key (all keymaps) popup menu.
 - `:checkhealth` Run health checks for LSP, Treesitter, Lazy, and clipboard tools.
 
 ## Additional Keymaps/Commands
