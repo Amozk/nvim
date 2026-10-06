@@ -41,7 +41,7 @@ This setup relies on the official **NvChad & NvZone ecosystem**, customized with
 
 ## Configured Modules
 - **Formatting ([`conform.nvim`](https://github.com/stevearc/conform.nvim)):** Format-on-save using `prettier` (Astro, TS, JS, CSS, HTML) and `stylua` (Lua).
-- **LSP ([`nvim-lspconfig`](https://github.com/neovim/nvim-lspconfig) + [`mason.nvim`](https://github.com/williamboman/mason.nvim)):** Pre-configured servers for Astro, TypeScript (`ts_ls`), ESLint, HTML, CSS, and Lua.
+- **LSP ([`nvim-lspconfig`](https://github.com/neovim/nvim-lspconfig) + [`mason.nvim`](https://github.com/williamboman/mason.nvim)):** Pre-configured servers for Astro, TypeScript (`ts_ls`), ESLint, HTML, CSS, Lua, and Vue.
 - **Color Tools ([`nvzone/minty`](https://github.com/nvzone/minty)):** Interactive color picker and shade generator UI.
 - **Autocompletions ([`nvim-cmp`](https://github.com/hrsh7th/nvim-cmp)):** Extended with Windows-friendly completion keybinds (`<C-o>`, `<C-Space>`).
 - **Syntax & Folding ([`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter)):** Web parsers installed with Treesitter-based expression folding (`foldlevel = 99`).
@@ -64,6 +64,8 @@ Managed via Mason and configured in `lua/configs/lspconfig.lua`:
 - `html` & `cssls`
 - `lua_ls` (Neovim runtime & NvChad types)
 - `tailwindcss`
+- `vue_ls`
+- `vtsls`
 
 ---
 
