@@ -6,6 +6,7 @@ local options = {
     astro = { "prettier" },
     typescript = { "prettier" },
     javascript = { "prettier" },
+    vue = { "prettier" },
   },
 
   format_on_save = {

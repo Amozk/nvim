@@ -45,8 +45,14 @@ return {
     ---@type render.md.UserConfig
     opts = {},
   },
-  -- These are some examples, uncomment them if you want to see them work!
 
+  -- {
+  --   "pmizio/typescript-tools.nvim",
+  --   dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+  --   opts = {},
+  -- },
+  -- -- These are some examples, uncomment them if you want to see them work!
+  --
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 }

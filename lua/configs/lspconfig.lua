@@ -39,7 +39,29 @@ vim.lsp.config("astro", {
   end,
 })
 
-local servers = { "html", "cssls", "astro", "ts_ls", "eslint", "tailwindcss" }
+-- Custom config for vue
+local vue_language_server_path = vim.fn.stdpath "data"
+  .. "/mason/packages/vue-language-server/node_modules/@vue/language-server"
+
+vim.lsp.config("vtsls", {
+  filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
+  settings = {
+    vtsls = {
+      tsserver = {
+        globalPlugins = {
+          {
+            name = "@vue/typescript-plugin",
+            location = vue_language_server_path,
+            languages = { "vue" },
+            configNamespace = "typescript",
+          },
+        },
+      },
+    },
+  },
+})
+
+local servers = { "html", "cssls", "astro", "eslint", "tailwindcss", "vue_ls", "vtsls" }
 vim.lsp.enable(servers)
 
 -- read :h vim.lsp.config for changing options of lsp servers
